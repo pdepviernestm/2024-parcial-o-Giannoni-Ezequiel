@@ -92,12 +92,14 @@ class Furia inherits Emocion(intensidad=100){
 // self. eventos experimentados > intensidad
 class Alegria inherits Emocion{
   method puedeSerLiberada(evento){
-    return cantEventosVividos(evento)
+    self.intensidadElevada()
+    self.cantEventosVividos(evento)
+    return true
   }
-  method liberarse(evento){
+  override method liberarse(evento){
     if(self.puedeSerLiberada(evento)){
-    intensidadElevada() -= evento.imacto()
-    }
+    self.intensidadElevada() -= evento.imacto()
+    } 
   }
   method cantEventosVividos(){
     return eventosExperimentados %2 == 0 //es par
