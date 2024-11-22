@@ -2,9 +2,9 @@ import example.*
 
 describe "group of tests for persons" {
 
-  test "pertenece a un evento" {
-    const juan = new Persona(edad = 12)
-    asserts.esAdolescente()
+  test "persona es Adolescente" {
+    const juan = new Persona(edad = 12, intensidad = 0)
+    assert.that(juan.esAdolescente())
     
   }
 
