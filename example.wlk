@@ -107,11 +107,11 @@ class Ansiedad inherits Emocion(intensidad = 50){
 
 /*
  ** POLIMORFISMO:
-     + Ansiedad entiende los mensajes de Emocion, y 
-     +
+     + Ansiedad entiende los mensajes de Emocion, tiene los mismos metodos presentando comportamientos distintos 
+     + Entiende el atributo intensidad por ejemplo, y es inicializado con un valor distinto
      +
  ** HERENCIA: 
-     + Ansiedad hereda los mensajes de Emocion
-     +
+     + Ansiedad hereda los mensajes y atributos de Emocion.
+     + A traves de la herencia comparten comportamientos, y habilita muchas maneras de combinarlos
      +
 */
